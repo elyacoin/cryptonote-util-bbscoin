@@ -28,7 +28,15 @@
                   "-std=c++0x",
                   "-fexceptions",
                   "-frtti",
+                  "-Wno-unused-private-field",
             ],
+            "xcode_settings": {
+                "OTHER_CFLAGS": [
+                    "-fexceptions",
+                    "-frtti",
+                    "-Wno-unused-private-field"
+                ],
+            }
         }
     ]
 }

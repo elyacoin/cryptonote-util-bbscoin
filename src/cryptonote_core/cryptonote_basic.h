@@ -383,7 +383,6 @@ namespace cryptonote
 
     BEGIN_SERIALIZE_OBJECT()
       VARINT_FIELD_N("major_version", b.major_version);
-      if(b.major_version > CURRENT_BYTECOIN_BLOCK_MAJOR_VERSION) return false;
       VARINT_FIELD_N("minor_version", b.minor_version);
       VARINT_FIELD(timestamp);
       FIELD_N("prev_id", b.prev_id);
@@ -456,14 +455,13 @@ namespace cryptonote
 
     BEGIN_SERIALIZE()
       VARINT_FIELD(major_version)
-      if(major_version > BLOCK_MAJOR_VERSION_3) return false;
       VARINT_FIELD(minor_version)
-      if (BLOCK_MAJOR_VERSION_1 == major_version)
+      if (BLOCK_MINOR_VERSION_1 == minor_version)
       {
         VARINT_FIELD(timestamp)
       }
       FIELD(prev_id)
-      if (BLOCK_MAJOR_VERSION_1 == major_version)
+      if (BLOCK_MINOR_VERSION_1 == minor_version)
       {
         FIELD(nonce)
       }

@@ -1,6 +1,6 @@
 {
     "name": "cryptonote-util",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "cryptonote",
     "author": {
         "name": "LucasJones",
@@ -10,8 +10,8 @@
         "type": "git",
         "url": "https://github.com/bbscoin/node-cryptonote-util.git"
     },
-    "dependencies" : {
-        "bindings" : "*"
+    "dependencies": {
+        "bindings": "*"
     },
     "keywords": [
         "cryptonight",

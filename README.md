@@ -1,5 +1,5 @@
-Node-Cryptonote-Util
-====================
+cryptonote-util-bbscoin
+=======================
 
 Dependencies
 ------------

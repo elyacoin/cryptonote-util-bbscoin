@@ -1,5 +1,5 @@
 {
-    "name": "cryptonote-util-bbscoin",
+    "name": "cryptonote-util-elyacoin",
     "version": "1.0.3",
     "main": "cryptonote",
     "author": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/bbscoin/node-cryptonote-util.git"
+        "url": "https://github.com/elyacoin/elya-util-bbscoin.git"
     },
     "dependencies": {
         "bindings": "*"
